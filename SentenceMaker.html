@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="SentenceMaker.css">
+  <title>Sentence Maker</title>
+</head>
+<body>
+  <h1>𝒮𝑒𝓃𝓉𝑒𝓃𝒸𝑒 𝑀𝒶𝓀𝑒𝓇</h1>
+
+  <div class="scene">
+    <div class="cube pink box0"></div>
+    <div class="cube red box1"></div>
+    <div class="cube blue box2"></div>
+    <div class="cube yellow box3"></div>
+    <div class="cube green box4"></div>
+    <div class="cube orange box5"></div>
+    <div class="cube purple box6"></div>
+    <div class="cube blue box7"></div>
+    <div class="cube red box8"></div>
+    <div class="cube yellow box9"></div>
+    <div class="cube orange box10"></div>
+    <div class="cube purple box11"></div>
+    <div class="cube green box12"></div>
+  </div>
+
+  <button onclick="Start()">Start</button>
+  <p id="output"></p>
+
+  <script>
+    function Start() {
+      let adjective = "beautiful";
+      let noun = "warda";
+      let verb = "play";
+      let place = "park";
+      let adjective2 = "handsome";
+      let noun2 = "mango";
+
+      let firstStory = `Once upon a time, there was a(n) ${adjective} ${noun} who loved to eat ${noun2}. The ${noun} lived in a ${place} and had ${adjective2} nostrils that blew fire when it was ${verb}.`;
+      console.log(`First story: ${firstStory}`);
+
+      adjective = "lovely";
+      noun = "Beerera";
+      verb = "playing";
+      place = "house";
+      adjective2 = "sleeping";
+      noun2 = "apple";
+
+      let secondStory = `Once upon a time, there was a(n) ${adjective} ${noun} who loved to eat ${noun2}. The ${noun} lived in a ${place} and had ${adjective2} nostrils that blew fire when it was ${verb}.`;
+      console.log(`Second story: ${secondStory}`);
+
+      document.getElementById("output").innerText = `${firstStory}\n\n${secondStory}`;
+    }
+  </script>
+</body>
+</html>
